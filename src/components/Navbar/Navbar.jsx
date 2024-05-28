@@ -1,41 +1,45 @@
 import "./Navbar.css"
-import logo from '../../assets/logo.svg'
-import greenArrow from '../../assets/green-arrow.svg'
+import logo from '/logo.svg'
+import greenArrow from '/green-arrow.svg'
 
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <div className="navbar-logo">
+            <a className="navbar-logo" href="#">
                 <img src={logo} alt="dogather-logo" />
-                <p>dogather</p>
-            </div>
+                <span>dogather</span>
+            </a>
             <div className="navbar-links">
-                <div>
-                    <ul className="navbar-pages">
-                        <li className="navbar-link">
-                            <a href=''>about us</a>
+                <ul className="navbar-pages">
+                    <li>
+                        <a className="navbar-link" href="#">
+                            <span>about us</span>
                             <img src={greenArrow} alt="green arrow"/>
-                        </li>
-                        <li className="navbar-link">
-                            <a href=''>features</a>
+                        </a>
+                    </li>
+                    <li>
+                        <a className="navbar-link" href='#'>
+                            <span>features</span>
                             <img src={greenArrow} alt="green arrow"/>
-                        </li>
-                        <li className="navbar-link">
-                            <a href=''>contact</a>
+                        </a> 
+                    </li>
+                    <li>
+                        <a className="navbar-link" href='#'>
+                            <span>contact</span> 
                             <img src={greenArrow} alt="green arrow"/>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul className="navbar-login">
-                       <li className="navbar-link">
-                            <a href=''>login</a>
+                        </a>
+                    </li>
+                </ul>
+                <ul className="navbar-login">
+                    <li>
+                        <a className="navbar-link" href='#'>
+                            <span>login</span>
                             <img src={greenArrow} alt="green arrow"/>
-                        </li> 
-                    </ul> 
-                </div>
+                        </a>
+                    </li>   
+                </ul> 
+                <button className="register-btn">register</button>
             </div>
-            <button className="register-btn">register</button>
         </nav> 
     )
 }
