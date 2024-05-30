@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-* {
-  margin: 0;
-  padding: 0;
-}
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-=======
 :root {
->>>>>>> d379ad03c94459fbacd9867fc81b1f339164de62
 
     /*colors*/
     --clr-accent:#61C554;
@@ -73,20 +62,6 @@ svg {
   max-width: 100%;
 }
 
-<<<<<<< HEAD
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-=======
 /*utility classes*/
 .bg-white {
   background-color: var(--clr-white);
@@ -94,5 +69,6 @@ svg {
 
 .bg-grey {
   background-color: var(--clr-grey);
+<<<<<<< HEAD
 }
 >>>>>>> d379ad03c94459fbacd9867fc81b1f339164de62
